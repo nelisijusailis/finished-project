@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+
+
+}
+
+p, blockquote {
+      font-size: .9em;
+      line-height: 1.6em;
+}
+
+ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+}
+
+.container {
+      text-align: center;
+      padding: .8em 1.2em;
+}
+
+.logo {
+      width: 130px;
+}
+
+.hide-mobile {
+      display: none;
+}
+
+
+
+header {
+      display: flex;
+      justify-content: space-between;
+}
+
+.menu {
+      width: 15px;
+      margin-top: 45%;
+}
+
+.server {
+      width: 70%;
+      margin: 2em auto 2em 25%;
+}
+
+h1, .subhead {
+      position: relative;
+      z-index: 3;
+
+}
+
+.subhead {
+      font-size: 1.1em;
+}
+
+.blue-container {
+      width: 100%;
+      background:  #006eff7e;
+      color: #fff;
+      margin-top: 15%;
+      padding: 4em 0 2em;
+      border-top-left-radius: 40px;
+      transform: skewY(0deg);
+
+}
+
+.blue-container:before {
+      content: "";
+      width: 40px;
+      height: 40px;
+      background-color: #006eff75;
+      position: absolute;
+      top: -40px;
+      right: 0;
+      z-index: -2;
+}
+
+.blue-container:after {
+      content: "";
+      width: 80px;
+      height: 80px;
+      background-color: #fff;
+      top: -80px;
+      position: absolute;
+      right: 0;
+      border-radius: 100%;
+      z-index: -1;
+   
+}
+
+.blue-container ul {
+      transform: skewY(0deg)
+}
+
+.blue-container ul li {
+      margin-bottom: 3em;
+}
+
+.blue-container ul li p {
+      margin-bottom: 0.5em;
+}
+
+.blue-container img {
+      width: 12%;
+}
+/* this way I created a class element ant targeted it with img.icon3 but there's alternative way */
+
+/* .blue-container ul li:nth-child(3) targets third element as well from html maybe more practical */
+
+.blue-container img.icon3 {
+      width: 8%;
+}
+.grey-container {
+      content: "";
+      background: rgba(201, 202, 205, 0.154);
+      color: black;
+      padding: 4em 0 2em;
+
+}
+
+.grey-container ul li:first-child {
+      margin-bottom: 2em;
+}
+
+.cta {
+      background-color: rgba(47, 85, 254, 0.798);
+      width: calc(100% - 1em);
+      display: block;
+      color: #fff;
+      border-radius: 50px 10px 50px;
+      text-decoration: none;
+      font-size: 1.6em;
+      margin: 3% auto 7%;
+      padding: 10px 0 10px;
+      position: relative;
+      z-index: 4;
+      
+}
+
+.cta:hover {
+
+     background-color: rgba(47, 140, 254, 0.86);
+}
+
+.footer-container {
+
+      width: 100%;
+      background-color: #3D444A;
+      color: #fff;
+      padding: 3em 0;
+      border-top-right-radius: 40px;
+      transform: skewY(0deg);
+}
+
+.footer-container .container {
+      transform: skewY(-2deg);
+}
+
+.footer-container::before {
+      content: "";
+      width: 40px;
+      height: 40px;
+      background-color:#3D444A;
+      position: absolute;
+      top: -39px;
+      left: 0;
+      z-index: -2;
+      
+
+}
+
+.footer-container:after {
+      content: "";
+      width: 80px;
+      height: 80px;
+      background-color: #fff;
+      position: absolute;
+      z-index: -1;
+      top: -80px;
+      left: 0;
+      border-radius: 50%;
+
+}
+
+ul.footer-links {
+      margin: 0 auto;
+      transform: skewY(2deg);
+}
+
+ul.footer-links li {
+      display: inline-block;
+
+}
+.container .logo {
+      transform: skewY(2deg);
+}
+p.address {
+      transform: skewY(2deg);
+}
+
+ul.footer-links li a {
+      color: #9D9d9d;
+      font-size: .8em;
+
+}
+
+
+nav ul {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      right: 0;
+      padding: 0 0 10em 5em;
+      text-align: center;
+      background: #3d444a00;
+      height: 10%;
+      z-index: 7;
+      padding-top: 3em;
+}
+
+nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      width: 100%;
+      padding: 1em 2em;
+      background: #4b5b6990;
+
+}
+
+nav ul li a:hover {
+      background-color: #2b3f52be;
+}
+
+.exit-btn {
+      margin-bottom: 1em;
+      margin-top: -1.3em;
+      text-align: right;
+      padding: 0 1.4em;
+
+}
+
+.exit-btn img {
+      width: 15px;
+      cursor: pointer;
+
+}
+
+ @media only screen and (min-width: 650px) {
+
+      .server {
+            width: 50%;
+      }
+
+      h1 {
+            font-size: 3em;
+            margin: 0;
+      }
+
+      .subhead {
+            font-size: 1.4em;
+            margin-bottom: 12%;
+      }
+
+      .blue-container {
+            margin: 0;
+      }
+
+      .blue-container img {
+            width: 20%;
+      }
+
+      .blue-container ul li:nth-child(3) img {
+            width: 13%;
+            margin-top: -5%;
+      }
+
+      .blue-container ul {
+            display: flex;
+            margin-top: -1em;
+            align-items: center;
+      }
+
+      .blue-container ul li {
+            margin-bottom: 0;
+      }
+      .blue-container ul li p {
+
+            padding: 0 .8em;
+      }
+
+      .grey-container ul {
+            display: grid;
+      }
+
+      nav ul {
+            width: 40%;
+      }
+
+ }
+ @media only screen and (min-width: 875px) {
+
+      .subhead {
+            margin-bottom: 15%;
+      }
+
+      .blue-container ul {
+            margin: 0 0 4% 0;
+      }
+ }
+
+ @media only screen and (min-width: 1024px) {
+
+      .cta {
+            width: 50%;
+      }
+
+      .container {
+            width: 80%;
+            margin: 0 auto;
+      }
+
+      .show-desktop {
+            display: block;
+            margin: 0 auto 13% auto;
+      }
+
+      .hide-desktop {
+            display: none;
+      }
+
+      nav ul {
+            position: inherit;
+            width: auto;
+            background: none;
+            height: auto;
+            display: flex;
+            padding-top: 0;
+      }
+
+      nav ul li {
+            float: left;
+ 
+      }
+      
+      nav ul li a {
+            color: black;
+            background-color: inherit;
+            text-align: left;
+            padding: 1em 2em;
+      }
+
+      nav ul li a:hover {
+            background-color: inherit;
+      }
+
+      .scroll {
+            width: 20px;
+            margin-top: 4em; 
+            animation: move 2s infinite alternate;
+
+      }
+
+      @keyframes move {
+            from {
+                  transform: translateY(-20px);
+            }
+            to {
+                  transform: translateY(70px);
+            }
+      }
+ }
+ @media only screen and (min-width: 1024px) {
+
+      .server {
+            width: 40%;
+            margin: 5em auto 4em 15%;
+      }
+
+      .container {
+            width: 70%;
+      }
+
+      .blue-container {
+            padding: 7em 0 2em;
+      }
+
+      .blue-container ul li p, blockquote {
+            font-size: 1.3em;
+      }
+
+      .grey-container {
+            padding: 4em 0 1em;
+      }
+
+      h2 {
+            margin-top: 4em;
+      }
+
+      .blue-container img {
+            width: 15%;
+      }
+
+      .blue-container ul li:nth-child(3) img {
+            width: 8%;
+            margin-top: -4px;
+      }
+   
+ }
